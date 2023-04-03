@@ -1,0 +1,152 @@
+/* Main Page */
+
+/* Body Backround */
+
+.mainPage {
+  background-image: url(img/bgimgMain.png);
+  background-repeat: no-repeat;
+  background-color: rgb(74, 74, 74);
+  background-size: cover;
+  font-family: sans-serif;
+}
+
+.mainPage::after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.678);
+}
+
+/* Line under UMNGotcha */
+
+hr.border {
+  background-color: white;
+  width: 90% !important;
+}
+
+/*Enter Pet Name */
+
+#enterpetname {
+  border-radius: 8px;
+  border-color: rgb(17, 17, 17);
+}
+
+/*PLAY Button*/
+
+#buttonplay {
+  --bs-btn-padding-y: 0.25rem;
+  --bs-btn-padding-x: 0.5rem;
+  --bs-btn-font-size: 1rem;
+  border-color: black;
+  background: #d0aaaa88;
+  color: white;
+  width: 80px;
+}
+
+#buttonplay:hover {
+  background: #c5b8b888;
+  color: black;
+  transition: 0.1 linear;
+}
+
+/* Gambar Pet */
+
+.slides {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.slide {
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+/* Next and Previous Button */
+
+a.prevPet,
+a.nextPet {
+  padding: 3px 10px 5px 10px;
+  flex-direction: row;
+  text-decoration: none;
+  color: rgb(215, 215, 215);
+  background-color: rgba(99, 99, 99, 0.614);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.ugh {
+  align-items: center;
+  justify-content: center;
+}
+
+/* Home Page */
+
+#homePage {
+  background-image: url(img/night1.png);
+  background-repeat: no-repeat;
+  background-color: rgb(135, 135, 135);
+  background-size: 100% 100%;
+  font-family: sans-serif;
+  color: white;
+  transition: all 1s linear;
+}
+
+.no-padding {
+  padding: 0;
+}
+.no-margin {
+  margin: 0;
+}
+
+#Pet {
+  height: 100px;
+}
+
+.buttons {
+  --bs-btn-padding-y: 0.25rem;
+  --bs-btn-padding-x: 0.5rem;
+  --bs-btn-font-size: 1rem;
+  border-color: rgb(85, 132, 235);
+  background: rgba(0, 247, 255, 0.651);
+  color: rgb(0, 0, 0);
+  width: 80px;
+}
+
+#buttonHome:hover {
+  border-color: rgb(114, 114, 187);
+  background: #26269c;
+  color: white;
+  transition: 0.2s linear;
+}
+
+.container-fluid {
+  width: 99%;
+}
+
+.sticky {
+  position: sticky;
+  bottom: 5px;
+  right: 0;
+}
+
+.canvasParent {
+  width: 100%;
+}
+
+canvas {
+  border: 1px solid black;
+  background-color: white;
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UMNGotcha | MidExam</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="mainPage d-flex">
+    <script>
+      localStorage.clear();
+    </script>
+    <div class="container text-white">
+      <div class="row text-center">
+        <div class="col">
+          <div
+            class="row pt-3 d-flex justify-content-center align-items-center"
+          >
+            <div class="col">
+              <img src="img/paw.png" width="100" />
+            </div>
+            <div class="col">
+              <h4>UMN Gotcha</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col d-flex justify-content-center">
+          <hr class="border border-2 rounded opacity-100" />
+        </div>
+      </div>
+
+      <div class="row text-center mt-5">
+        <div class="col d-flex ugh">
+          <a
+            href="#"
+            class="prevPet rounded-circle"
+            onclick="changeSlideIndex(-1)"
+            ><</a
+          >
+          <div class="slides">
+            <img
+              src="img/Pet1.jpg"
+              class="PetPic rounded slide"
+              width="175"
+              style="display: none"
+            />
+            <img
+              src="img/Pet2.jpg"
+              class="PetPic rounded slide"
+              width="175"
+              style="display: none"
+            />
+            <img
+              src="img/Pet3.jpg"
+              class="PetPic rounded slide"
+              width="175"
+              style="display: none"
+            />
+          </div>
+          <a
+            href="#"
+            class="nextPet rounded-circle"
+            onclick="changeSlideIndex(1)"
+            >></a
+          >
+        </div>
+      </div>
+
+      <div class="row text-center mt-4">
+        <div class="col">
+          <h5>Enter your pet name</h5>
+        </div>
+      </div>
+
+      <form action="home.html">
+        <div class="row d-flex justify-content-center">
+          <div class="col-5 border-3">
+            <div class="input-group input-group-sm mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="petName"
+                placeholder="Pet Name"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col">
+            <button
+              type="submit"
+              class="btn btn-primary border-2"
+              id="buttonplay"
+              onclick="sendInfo()"
+            >
+              PLAY
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <!-- 
+        w3school = Slideshow Image <-- Cara kompleks cmn bisa manual untuk pengeditannya
+        Bootstrap = Carousel <-- Kalo mau cara cepet
+    -->
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="mainpage.js"></script>
+  </body>
+</html>
