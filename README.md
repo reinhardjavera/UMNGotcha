@@ -7,8 +7,6 @@
 -        Muhammad Tristan Ajibrilyan Nandipinto 00000078653
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Youtube Demo Presentasi: https://youtu.be/zPe6NOHAJfk
-
 Project Github: https://github.com/reinhardjavera/Project-UTS-PTI-UMNGotcha
 
 “UMN Gotcha” merupakan game berbasis web yang sebuah game virtual pet dimana kita bisa berinteraksi dengan pet tersebut seperti makan, tidur, main, dan berobat. Pet player harus bertahan hidup selama dua hari untuk level up serta bertahan hidup dengan max level yaitu 3.
